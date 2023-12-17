@@ -1,0 +1,17 @@
+
+dubbo:
+  application:
+    name: dubbo-demo
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://127.0.0.1:8848
+spring:
+  application:
+    name: dy-live-api # 服务名
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848  # Nacos 服务地址
+server:
+  port: 8082

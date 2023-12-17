@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: dy-live-user-provider # 服务名
+  datasource:
+    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+    url: jdbc:shardingsphere:classpath:application-dy-db-sharding.yaml
+    hikari:
+      pool-name: dy-user-pool
+      minimum-idle: 150
+      maximum-pool-size: 300
+      connection-init-sql: select 1
+      connection-timeout: 4000
+      max-lifetime: 60000
+
+
+
